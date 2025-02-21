@@ -5,9 +5,11 @@ def generate_prime_factors(user_input):
             if user_input > 1:
                 return user_input  # Return the number if it is greater than 1
                 break
+            if user_input == 1:
+                return []
+                break
             else:
                 raise ValueError
-                break
         except ValueError:
             raise ValueError
 
