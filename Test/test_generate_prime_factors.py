@@ -39,3 +39,7 @@ def test_input_three():
 def test_input_four():
     assert generate_prime_factors(4) == [2, 2]
 
+
+# Testing when input is 6.
+def test_input_six():
+    assert generate_prime_factors(6) == [2, 3]
