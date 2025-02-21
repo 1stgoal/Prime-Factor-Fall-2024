@@ -8,22 +8,28 @@ sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 from prime import generate_prime_factors
 
 
-# testing the string input
+# Testing the string input.
 def test_string():
     with pytest.raises(ValueError):
         generate_prime_factors("f")
 
 
-# testing the float input
+# Testing the float input.
 def test_float_input():
     with pytest.raises(ValueError):
         generate_prime_factors(.5)
 
 
-# testing when input is 1
+# Testing when input is 1.
 def test_input_one():
     assert generate_prime_factors(1) == []
 
 
+# Testing when input is 2.
 def test_input_two():
     assert generate_prime_factors(2) == [2]
+
+
+# Testing when input is 3.
+def test_input_three():
+    assert generate_prime_factors(3) == [3]
