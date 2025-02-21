@@ -48,3 +48,10 @@ def test_input_six():
 # Testing when input is 8.
 def test_input_eight():
     assert generate_prime_factors(8) == [2, 2, 2]
+
+
+# Testing when input is 9.
+def test_input_nine():
+    assert generate_prime_factors(9) == [3, 3]
+
+
