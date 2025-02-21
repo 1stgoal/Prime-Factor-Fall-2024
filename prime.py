@@ -1,8 +1,17 @@
 def generate_prime_factors(user_input):
-    if user_input > 1:
-        return user_input  # Return the number if it is greater than 1
-    else:
-        raise ValueError
+    while True:
+        try:
+            user_input = int(user_input)
+            if user_input > 1:
+                print("hi")
+                break
+            else:
+                raise ValueError
+
+        except ValueError:
+            raise ValueError
+            break
 
 
-print(generate_prime_factors(15))
+if __name__ == "__main__":
+    generate_prime_factors(user_input=2)
